@@ -7,7 +7,5 @@ Gerekli dosyaları indirmek için bu repoda yeşil renki Code kısmından dosyal
 zip'i açtıktan sonra cmd.exe'de :
 # pip install -r requirements.txt
 Komutunu çalıştırmanız gerekir. Buradaki yüklemeler yapıldıktan sonra kod çalışmaya hazırdır. data_mining.py dosyayı üzerinde istediğiniz satırın çalışması için başındaki # işaratini kaldırırak dosyayı düzenledikten sonra cmd.exe üzerinde:
-# python data_mining.py 
-veya
 # python3 data_mining.py
 komutunu çalıştırmanız yeterlidir.
