@@ -8,7 +8,7 @@ pd.set_option('display.max_rows', None)
 df = pd.read_csv('diabetes.csv')
 
 
-#print(df)
+print(df)
 #print(df.isnull().sum()) #sıfır bulunduran veriler
 #print(df.eq(0).sum()) #hangi veride kaç tane sıfır var
 #print(df.shape) #768 hasta 9 özellik
@@ -25,20 +25,19 @@ plt.tight_layout()
 plt.xlabel('Corr')
 plt.show()
 """
-"""  buraya kadar veri önişlemesi yaptık. şimdi algoritmaları eğitmeye çalışcaz.
-kullanılcak algoritmalar 
-    regrasyon analizi, iki ya da daha çok nicel değişken arasındaki ilişkiyi ölçmek için kullanılan analiz metodudur.
+""" Buraya kadar olan kısım veri önişlemesidir.
+Kullanılcak algoritmalar 
     1.lojistik regrasyon
     2.destek vektör regrasyonu
 """
 #algoritmalar oluşturulması
 #elimizdeki 100 veriden her 10 gözlem değerinden 1 öğrenme gerçekleşir.
-
+"""
 from sklearn import linear_model
 from sklearn.model_selection import cross_val_score
 X = df[['Glucose', 'BMI', 'Age']]
 y = df.iloc[:, 8]
-
+"""
 #print(X)
 #print(y)
 #LOG REG
